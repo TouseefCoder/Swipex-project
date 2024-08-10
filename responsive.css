@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+
+    .section-left, .section-right {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }   
+    
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 47px;
+        background: var(--white);
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--blue);
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: var(--white);
+        color: var(--Light-Grey);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .hamburger i {
+        font-size: 24px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar .left,
+    .navbar .right {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar .icon {
+        font-size: 28px;
+    }
+
+    .navbar .icon:hover {
+        color: var(--Orange-icon-background);
+    }
+
+    .navbar .left select {
+        font-size: 25px;
+    }
+
+    .navbar .right {
+        gap: 15px;
+    }
+
+    .navbar .line {
+        display: none;
+    }
+
+    .main .section-left   {
+        max-width: 40%;
+        width: 40%;
+    }
+    .main .section-center {
+        max-width: 60%;
+        width: 60%;
+    }
+    .main .section-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .navbar .left, .navbar .right {
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-center .main-img {
+        height: 300px;
+    }
+
+    .section-left .bottom-card {
+        width: 35%;
+    }
+
+    .section-right .details {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .main .section-left, .main .section-right, .main .section-center {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .section-center .main-img {
+        height: 250px;
+    }
+
+    .section-center .imgs img {
+        height: 50px;
+    }
+
+    .section-left .bottom-card {
+        width: 80%;
+    }
+}
